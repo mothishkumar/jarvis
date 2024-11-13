@@ -1,10 +1,6 @@
 import random
 import Base.Listen as Listen
 import Base.Speak as Speak
-import Functions.weather as weather
-import Functions.time as time
-import Functions.internet_speed as internet_speed
-import Functions.tell_joke as joke
 from MainBrain.brain import *
 from DATA.DLG import *
 from BRAIN.welcome_greatings import *
@@ -28,8 +24,7 @@ def comain():
             response = brain(text)
             Speak.speak(response)
         else:
-            response = brain(text)
-            Speak.speak(response)
+            pass
 
 def main():
     while True:
